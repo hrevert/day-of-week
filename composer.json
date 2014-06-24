@@ -1,0 +1,28 @@
+{
+    "name": "hrevert/day-of-week",
+    "description": "Day of week library",
+    "type": "library",
+    "keywords": [
+        "hrevert",
+        "day",
+        "day-of-week",
+        "datetime"
+    ],
+    "license": "MIT",
+    "homepage": "https://github.com/hrevert/day-of-week",
+    "authors": [
+        {
+            "name": "Hrevert Technologies",
+            "email": "info@hrevert.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4",
+        "marc-mabe/php-enum": "1.2.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Hrevert\\Day\\": "src/"
+        }
+    }
+}
