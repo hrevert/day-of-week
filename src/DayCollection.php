@@ -23,6 +23,10 @@ class DayCollection extends ArrayCollection
             ));
         }
 
+        if ($day->getValue() !== $key) {
+            throw new Exception\InvalidArgumentException(sprintf('Invalid key'));            
+        }
+
         return parent::set($key, $day);
     }
 
