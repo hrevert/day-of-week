@@ -4,6 +4,7 @@ day-of-week
 [![Latest Stable Version](https://poser.pugx.org/hrevert/day-of-week/v/stable.png)](https://packagist.org/packages/hrevert/day-of-week)
 [![Total Downloads](https://poser.pugx.org/hrevert/day-of-week/downloads.png)](https://packagist.org/packages/hrevert/day-of-week)
 
+
 Day of week library
 
 ## Usage
