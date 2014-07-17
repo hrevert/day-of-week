@@ -18,6 +18,9 @@ $day = Day::get(Day::MONDAY);
 // or $day = Day::MONDAY();
 // or $day = Day::getByName('MONDAY');
 // or $day = Day::getByOrdinal(1);  i.e. find by ISO-8601 numeric representation of day
+
+/** @var Day */
+$today = Day::getToday();
 ```
 
 ```php
@@ -37,3 +40,19 @@ var_dump($days->contains(Day::MONDAY())); // bool(true)
 
 ```
 Since `Hrevert\Day\DayCollection` is just an extension of [`Doctrine\Common\Collections\ArrayCollection`](https://github.com/doctrine/collections/blob/master/lib/Doctrine/Common/Collections/ArrayCollection.php), it should not be so difficult.
+
+#### Using in <select> element
+```php
+use Hrevert\Day\Day;
+
+echo '<select name="day">';
+foreach (Day::getOptions() as $iso => $display) {
+    echo '<option value="' . $iso . '">' . $display . '</option>';
+}
+echo '</select>';
+
+
+// on form submit
+/** @var Hrevert\Day\Day */
+$day = Hrevert\Day\Day::get((int) $_POST['day']);
+```
