@@ -41,7 +41,7 @@ var_dump($days->contains(Day::MONDAY())); // bool(true)
 ```
 Since `Hrevert\Day\DayCollection` is just an extension of [`Doctrine\Common\Collections\ArrayCollection`](https://github.com/doctrine/collections/blob/master/lib/Doctrine/Common/Collections/ArrayCollection.php), it should not be so difficult.
 
-#### Using in <select> element
+#### Using in &lt;select&gt; element
 ```php
 use Hrevert\Day\Day;
 
