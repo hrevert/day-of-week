@@ -27,7 +27,7 @@ $today = Day::getToday();
 use Hrevert\Day\Day;
 use Hrevert\Day\DayCollection;
 
-$days = new DayCollection(Day::SUNDAY(), Day::MONDAY());
+$days = new DayCollection([Day::SUNDAY(), Day::MONDAY()]);
 
 var_dump($days->contains(Day::SUNDAY())); // bool(true)
 var_dump($days->contains(Day::MONDAY())); // bool(true)
